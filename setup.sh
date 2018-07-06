@@ -10,6 +10,7 @@ echo "setup script shell"
 
 #SSH2
 ln -s /usr/sbin/sshd /usr/sbin/sshd2
+cp -p /etc/ssh/ssh_host_* /etc/ssh2/
 /etc/init.d/ssh2 start
 
 #Clean Database
